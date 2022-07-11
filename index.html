@@ -44,15 +44,20 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0042ad;">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">SMK DKC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -90,9 +95,15 @@
     <aside class="position-fixed bottom-0 end-0">
         <ul class="menu">
             <div class="toggle">
-                <ion-icon name="add-outline"></ion-icon>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-clipboard2-pulse-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z" />
+                    <path
+                        d="M4.085 1H3.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1h-.585c.055.156.085.325.085.5V2a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 4 2v-.5c0-.175.03-.344.085-.5ZM9.98 5.356 11.372 10h.128a.5.5 0 0 1 0 1H11a.5.5 0 0 1-.479-.356l-.94-3.135-1.092 5.096a.5.5 0 0 1-.968.039L6.383 8.85l-.936 1.873A.5.5 0 0 1 5 11h-.5a.5.5 0 0 1 0-1h.191l1.362-2.724a.5.5 0 0 1 .926.08l.94 3.135 1.092-5.096a.5.5 0 0 1 .968-.039Z" />
+                </svg>
             </div>
-            <li style="--i:0;" class="active"><a href="#news">
+            <li style="--i:0;" class="active"><a href="#">
                     <ion-icon name="home-outline"></ion-icon>
                 </a></li>
             <li style="--i:1;"><a href="#">
@@ -107,7 +118,7 @@
             <li style="--i:4;"><a href="#">
                     <ion-icon name="desktop-outline"></ion-icon>
                 </a></li>
-            <li style="--i:5;"><a href="#">
+            <li style="--i:5;"><a href="#news">
                     <ion-icon name="ribbon-outline"></ion-icon>
                 </a></li>
             <li style="--i:6;"><a href="#">
@@ -137,34 +148,32 @@
 
 
 
-        <section class="about pt-5 text-light" style="background-color: #0099FF;">
+        <section class="about pt-5 text-light pb-5" style="background-color: #0042ad;">
             <div class="container">
                 <div class="row">
                     <div class="col text-center mb-3">
-                        <h2>Tentang sekolah</h2>
+                        <h2>Profil sekolah</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center fs-5 text-center">
-                    <div class="col-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam quam eius!
-                            Ullam
-                            cupiditate sunt unde aspernatur, autem cum dolorum vel praesentium cumque non sed.</p>
-                    </div>
-                    <div class="col-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut neque porro suscipit nemo
-                            inventore!
-                            Nostrum quas cum voluptate illum odit fuga saepe perspiciatis quibusdam sed.</p>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/E3RySNBJRIg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
         </section>
 
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M0,256L34.3,240C68.6,224,137,192,206,202.7C274.3,213,343,267,411,272C480,277,549,235,617,197.3C685.7,160,754,128,823,96C891.4,64,960,32,1029,16C1097.1,0,1166,0,1234,16C1302.9,32,1371,64,1406,80L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            <path fill="#0042ad" fill-opacity="1"
+                d="M0,320L120,272C240,224,480,128,720,117.3C960,107,1200,181,1320,218.7L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
             </path>
         </svg>
+
+
+
 
 
         <!-- prestasi -->
@@ -178,28 +187,34 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/design.jpg" class="card-img-top" alt="web tecnology">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Tingkat Nasional</p>
+                                <p class="card-text">Juara 3</p>
+                                <p class="card-text">Web Technology</p>
+                                <p class="card-text">MUHAMMAD RIDHO RAMADHAN</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/robot.jpg" class="card-img-top" alt="Robot">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Tingkat Nasional</p>
+                                <p class="card-text">Juara 2</p>
+                                <p class="card-text">Mobile Robotics</p>
+                                <p class="card-text">TAUFIQ FAKHURROHMAN</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/logos.jpg" class="card-img-top" alt="label logo">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Tingkat Nasional</p>
+                                <p class="card-text">Juara 3</p>
+                                <p class="card-text">Web Technology</p>
+                                <p class="card-text">MUHAMMAD RIDHO RAMADHAN</p>
                             </div>
                         </div>
                     </div>
@@ -209,8 +224,10 @@
                         <div class="card" style="width: 18rem;">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Tingkat Nasional</p>
+                                <p class="card-text">Juara 3</p>
+                                <p class="card-text">Web Technology</p>
+                                <p class="card-text">MUHAMMAD RIDHO RAMADHAN</p>
                             </div>
                         </div>
                     </div>
@@ -218,17 +235,19 @@
                         <div class="card" style="width: 18rem;">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">Tingkat Nasional</p>
+                                <p class="card-text">Juara 3</p>
+                                <p class="card-text">Web Technology</p>
+                                <p class="card-text">MUHAMMAD RIDHO RAMADHAN</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <div class="card-text text-center">
+                                    <button type="button" class="btn btn-primary btn-lg">Selengkapnya</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -237,19 +256,89 @@
         </section>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M0,96L34.3,90.7C68.6,85,137,75,206,85.3C274.3,96,343,128,411,165.3C480,203,549,245,617,240C685.7,235,754,181,823,160C891.4,139,960,149,1029,149.3C1097.1,149,1166,139,1234,117.3C1302.9,96,1371,64,1406,48L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            <path fill="#0042ad" fill-opacity="1"
+                d="M0,96L40,122.7C80,149,160,203,240,224C320,245,400,235,480,213.3C560,192,640,160,720,122.7C800,85,880,43,960,64C1040,85,1120,171,1200,213.3C1280,256,1360,256,1400,256L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
             </path>
         </svg>
 
+
         <div class="parallax2 p-5 align-items-center justify-content-center">
-            <div class="container bg-opacity-50 bg-light">
+            <div class="container bg-opacity-50 bg-light rounded-pill">
                 <div class="row text-center opacity mt-5">
                     <h2>SMK Dharma Kusuma Cianjur</h2>
                     <p>Terakreditasi : A, SK No.058/BAN-SM/SK/2020</p>
                 </div>
             </div>
         </div>
+        <section id="contact">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="visimisi">
+            <div class="row justify-content-evenly fs-5 text-center mt-5">
+                <div class="col-4">
+                    <div class="card">
+                        <h3>Misi</h3>
+                        <ul style="font-size: 12px;">
+                            <li>
+                                <p>Menumbuh kembangkan pembentukan pribadi yang mandiri, siap berkompetisi sesuai
+                                    potensi
+                                    yang dimiliki dalam menghadapi era globalisasi.</p>
+                            </li>
+                            <li>
+                                <p>Melaksanakan proses pembelajaran, bimbingan dan pelatihan secara efektif dan optimal
+                                    agar terbentuk siswa yang berakhlak mulia</p>
+                            </li>
+                            <li>
+                                <p>Menumbuh kembangkan dan mendorong semangat keunggulan secara intensif kepada seluruh
+                                    warga sekolah.</p>
+                            </li>
+                            <li>
+                                <p>Memberikan pelayanan masyarakat dalam bidang pendidikan dan pelatihan yang
+                                    potensial,unggulan dan kompetitif dalam menghadapi era globalisas</p>
+                            </li>
+                            <li>
+                                <p>Menjalin kerja sama dengan dunia usaha dan dunia industri dalam bidang penyediaan
+                                    tenaga
+                                    kerja yang terampil dan handal.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <h3>Visi</h3>
+                        <ul style="font-size: 12px;">
+                            <li>
+                                <p>Menciptakan pribadi yang siap berkompetisi, berjiwa mandiri, unggul dalam dalam sikap
+                                    dan prestasi, berdasarkan akhlak mulia.</p>
+                            </li>
+                            <li>
+                                <p>Menyiapkan bakat kecapakapan hidup/live skill siswa siswi, mengembangkan potensi dan
+                                    kompetensi</p>
+                            </li>
+                            <li>
+                                <p>Mengembangkan kemampuan potensi tamatan melalui penguasaan tuntas kompetensi
+                                    produktif dan kejuruan</p>
+                            </li>
+                            <li>
+                                <p>Membekali sikap profesional, mandiri tangguh dan mental yang positif berlandaskan
+                                    akhlakul karimah</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
 
     </main>
     <footer></footer>
