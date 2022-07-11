@@ -43,7 +43,7 @@ aside {
 
 .menu .toggle.active {
     transform: rotate(315deg);
-    box-shadow: 0 0 0 68px #fff;
+    box-shadow: 0 0 0 68px rgb(219, 225, 255);
     background: #222237;
     color: #fff;
 }
