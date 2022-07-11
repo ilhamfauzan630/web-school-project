@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,700');
-*, *::before, *::after {
+
+* {
   box-sizing: border-box;
 }
 
@@ -7,21 +8,32 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-.parallax{
-  background-image:url("../assets/smkdkc.jpg") ;
-  min-height: 500px; 
 
-  /* Create the parallax scrolling effect */
+.parallax {
+  background-image: url("../assets/smkdkc.jpg");
+
+
+  object-fit: cover;
+  object-position: center;
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .basic-example {
   display: flex;
 }
 
-body h1{ color: black ; height: 100 px; width: 800px; margin: 0 auto;padding-top: 50px; margin-bottom: 50px;}
+body h1 {
+  color: black;
+  height: 100 px;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
 
 
 .button {
@@ -61,7 +73,7 @@ body h1{ color: black ; height: 100 px; width: 800px; margin: 0 auto;padding-top
 }
 
 .portfolio__image,
-.portfolio-lightbox__image{
+.portfolio-lightbox__image {
   width: 100%;
   display: block;
 }
@@ -70,9 +82,9 @@ body h1{ color: black ; height: 100 px; width: 800px; margin: 0 auto;padding-top
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(0,1); 
+  transform: scale(0, 1);
   transition: transform 150ms ease-in-out;
-  transform-origin: right; 
+  transform-origin: right;
   padding: 2em;
   position: fixed;
   top: 0;
@@ -86,8 +98,8 @@ body h1{ color: black ; height: 100 px; width: 800px; margin: 0 auto;padding-top
 }
 
 .portfolio-lightbox:target {
-  transform: scale(1,1);
-  transform-origin: left; 
+  transform: scale(1, 1);
+  transform-origin: left;
 
 }
 
@@ -98,7 +110,9 @@ body h1{ color: black ; height: 100 px; width: 800px; margin: 0 auto;padding-top
   position: relative;
 }
 
-.portfolio__lightbox__image { margin-bottom: 1em; }
+.portfolio__lightbox__image {
+  margin-bottom: 1em;
+}
 
 .close {
   position: absolute;
@@ -122,7 +136,7 @@ body h1{ color: black ; height: 100 px; width: 800px; margin: 0 auto;padding-top
 
 /*footer*/
 
-footer{
+footer {
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -130,31 +144,38 @@ footer{
   color: aliceblue;
 }
 
-.ft{
-  display: flex;  
+.ft {
+  display: flex;
 }
-.ft .box{
+
+.ft .box {
   flex-basis: 50%;
   padding: 10px 20px;
 }
-.box h2{
+
+.box h2 {
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-.box .content{
+
+.box .content {
   margin: 20px 0 0 0;
 }
-.left .content p{
+
+.left .content p {
   text-align: justify;
 }
-.left .content .social{
+
+.left .content .social {
   margin: 20px 0 0 0;
 }
-.left .content .social #fa{
+
+.left .content .social #fa {
   padding: 0 2px;
 }
-.left .content .social #fa span{
+
+.left .content .social #fa span {
   height: 40px;
   width: 40px;
   right: -1em;
@@ -165,9 +186,13 @@ footer{
   border-radius: 5px;
   transition: 0.3s;
 }
-.left .content .social #fa span:hover{
+
+.left .content .social #fa span:hover {
   background: #f12020;
 }
-.btn button,textarea,input{
+
+.btn button,
+textarea,
+input {
   color: #111;
 }
