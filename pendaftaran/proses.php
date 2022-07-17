@@ -14,7 +14,7 @@ fclose($fp);
 
 header("location: setelah proses.php")
 
- ?>
+?>
 
 
 
